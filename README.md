@@ -1,1 +1,8 @@
-# Data-Cleaning-for-AdventureWorkds-Database-using-SQL
+# Olist Store Analysis using Power Bi 
+Here is the overall Dashboard:
+![Olist store dashoard](https://github.com/HajiraHaja/Olist-Store-Analysis---PowerBi/assets/166501265/35968517-78ba-45ed-b9a4-e0653da0449f)
+The individua pages of the report are as follows:
+Overview
+![Overview](https://github.com/HajiraHaja/Olist-Store-Analysis---PowerBi/assets/166501265/1446401d-a5e5-4813-a7a5-2eb50026434b)
+Sales 
+![Sales](https://github.com/HajiraHaja/Olist-Store-Analysis---PowerBi/assets/166501265/495fa2e6-8faa-4c6b-b5d7-f612f9996c89)
