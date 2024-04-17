@@ -1,4 +1,5 @@
-#Analysis using Power Bi 
+Analysis using Power Bi 
+
 Here is the overall Dashboard:
 ![Olist store dashoard](https://github.com/HajiraHaja/Olist-Store-Analysis---PowerBi/assets/166501265/35968517-78ba-45ed-b9a4-e0653da0449f)
 The individua pages of the report are as follows:
