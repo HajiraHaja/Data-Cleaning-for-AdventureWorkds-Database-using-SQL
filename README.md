@@ -12,6 +12,7 @@ Objectives
 6.	What are the total sellers, most profitable seller and where they are located?
 
 Main Approach
+
 The data schema was viewed to split data into key categories and take note of key points and potential links. After this, possible questions/statements of analysis for each category were formulated. The formula expression DAX was formed and new columns to find better insights from the variables. 
 For example:a new column was named regions to find the accurate region of the state and visualise in a better way the business behaviour across the city. 
 
