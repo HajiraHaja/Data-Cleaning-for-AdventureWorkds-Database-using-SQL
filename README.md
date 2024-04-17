@@ -1,3 +1,15 @@
+Project overview
+This project aims to conduct thorough data exploration and supplement information by reviewing insights from the company’s website, newspaper and economic websites from Brazil to gain a comprehensive understanding of the current market landscape surrounding the company. The fundamental analysis revealed that Olist operates within a diverse yet competitive market environment which is the e-commerce. While the company has experienced notable successes, some potential challenges were identified, including stagnation in sales for specific products. 
+
+In this project, with a use of Microsoft Power BI tool, a presented dashboards that summarizes the company in terms of the sales, customers, products and products performance. As well as descriptive, clustering analysis and forecasting analysis.
+
+Objectives
+1.	What is the total cost, sales, profit?
+2.	Total order by city, relationship between orders and reviews.
+3.	4.	What is the number of customers by state and sentimental analysis from reviews? 
+5.	What are the top and bottom 10 products by categories?
+6.	What are the total sellers, most profitable seller and where they are located?
+
 Analysis using Power Bi 
 
 Here is the overall Dashboard:
