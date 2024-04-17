@@ -10,6 +10,91 @@ Objectives
 5.	What are the top and bottom 10 products by categories?
 6.	What are the total sellers, most profitable seller and where they are located?
 
+Main Approach
+The data schema was viewed to split data into key categories and take note of key points and potential links. After this, possible questions/statements of analysis for each category were formulated. The formula expression DAX was formed and new columns to find better insights from the variables. 
+For example:a new column was named regions to find the accurate region of the state and visualise in a better way the business behaviour across the city. 
+
+Region =
+SWITCH (
+    'olist_customers_dataset'[customer_state],
+    "AL", "East",
+    "AM", "North",
+    "AP", "North",
+    "BA", "East",
+    "CE", "East",
+    "DF", "West",
+    "ES", "East",
+    "GO", "West",
+    "MA", "North",
+    "MG", "Southeast",
+    "MS", "West",
+    "MT", "West",
+    "PA", "North",
+    "PB", "East",
+    "PE", "East",
+    "PI", "Northeast",
+    "PR", "South",
+    "RJ", "Southeast",
+    "RN", "East",
+    "RO", "North",
+    "RR", "North",
+    "RS", "South",
+    "SC", "South",
+    "SE", "East",
+    "SP", "Southeast",
+    "TO", "North",
+    "Unknown"
+)
+
+A column to describe the name of each city was created.
+
+Full State Name =
+SWITCH (
+    'olist_customers_dataset'[customer_state],
+    "AC", "Acre",
+    "AL", "Alagoas",
+    "AM", "Amazonas",
+    "AP", "Amapá",
+    "BA", "Bahia",
+    "CE", "Ceará",
+    "DF", "Distrito Federal",
+    "ES", "Espírito Santo",
+    "GO", "Goiás",
+    "MA", "Maranhão",
+    "MG", "Minas Gerais",
+    "MS", "Mato Grosso do Sul",
+    "MT", "Mato Grosso",
+    "PA", "Pará",
+    "PB", "Paraíba",
+    "PE", "Pernambuco",
+    "PI", "Piauí",
+    "PR", "Paraná",
+    "RJ", "Rio de Janeiro",
+    "RN", "Rio Grande do Norte",
+    "RO", "Rondônia",
+    "RR", "Roraima",
+    "RS", "Rio Grande do Sul",
+    "SC", "Santa Catarina",
+    "SE", "Sergipe",
+    "SP", "São Paulo",
+    "TO", "Tocantins",
+    "Unknown"
+)
+And, a named Olist_review_dataset [Sentiment_review_category] was created, Where we created 3 categories under [review_score], Positive (5,4), Negative (1), Neutral (2,3) reviews. 
+
+Additionally, some new measures were created to find the accumulate profit of the organization.
+
+•	Total Cost = SUMX ('olist_order_items_dataset', 'olist_order_items_dataset'[price] + 'olist_order_items_dataset'[freight_value])
+
+•	Total_Revenue = SUM('olist_order_payments_dataset'[payment_value])
+
+•	Profit = [Total_Revenue] - [Total Cost]
+
+The creation of new columns and measures was driven by the goal of generating meaningful indicators and relationships, which could be analysed to extract insights regarding products, orders, sellers, and sales.
+
+Then, started visualizing our possible questions/statements of analysis to find the best-presented visuals to showcase the findings. The file was uploaded on power Bi service to create dashbaord. Key visuals were pinned across all areas to provide a quick snapshot of the fidnings .
+
+
 Analysis using Power Bi 
 
 Here is the overall Dashboard:
